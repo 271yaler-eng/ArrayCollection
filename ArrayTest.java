@@ -22,14 +22,15 @@ public class ArrayTest {
       int count = 0;
       String userInput;
       System.out.println("Name an animal starting with " + startingChar + ":");
-      userInput = scanner.nextLine().trim();
+      Scanner s = new Scanner(System.in);
+      userInput = s.nextLine().trim();
       while (userInput.charAt(0) == startingChar && !usedAnimals.contains(userInput) && animals.contains(userInput)) {
          usedAnimals.add(userInput);
          ++count;
          System.out.println("Name another animal starting with " + startingChar + ":");
-         userInput = scanner.nextLine().trim();
+         userInput = s.nextLine().trim();
       }
-
+      s.close();
       System.out.println("You named " + count + " animals starting with " + startingChar + ".");
    }
 }
