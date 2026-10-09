@@ -9,9 +9,9 @@
 // capacity, and one that allows the calling program to specify the capacity.
 //---------------------------------------------------------------------------
 
-package ch05.collections; //I really don't know how to fix this error here
+//package ch05.collections; //I really don't know how to fix this error here
 
-public class ArrayCollection<T> implements CollectionInterface<T>  
+public class ArrayCollection<T> 
 {
   protected final int DEFCAP = 100; // default capacity
   protected T[] elements;           // array to hold collection's elements
